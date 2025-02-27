@@ -5,6 +5,8 @@ My personal site.
 ---
 
 ## Works Cited
+Github Co-Pilot : used for line 18 in index.html, used in line 42-47 in styles.css
+
 
 > Use this section to  keep track of the resources you reference. You must include a link with a short description of how you used it. 
 

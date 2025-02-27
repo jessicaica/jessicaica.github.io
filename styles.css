@@ -1,6 +1,104 @@
-html{
-    font-family: serif;
-    background: rgb(253, 254, 246);
+@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@300;400;500;600;700&display=swap');
+
+:root {
+    --bg-gradient: linear-gradient(90deg, rgb(233, 245, 253) 0%, rgb(253, 238, 247) 25%, rgba(255,255,255,1) 50%, rgb(251, 233, 246) 75%, rgb(227, 243, 252) 100%);
+    --border-gradient: linear-gradient(to right, rgb(193, 193, 237), rgb(234, 193, 255)) 1;
+    --color1: rgb(0, 0, 0);
+    --color2: rgb(67, 77, 131);
+    --color3: rgb(93, 102, 148);
+}
+
+html {
+    .barlow-regular {
+        font-family: "Barlow", sans-serif;
+        font-weight: 400;
+        font-style: normal;
+    }
+    font-size: 1.5rem;
     margin: 0;
+    padding: 0;
+    height: 100%;
+}
+
+body {
+    margin: 0;
+    background: var(--bg-gradient) fixed;
+    color: var(--color1); 
+}
+
+.header {
+    height: 100px;
+    width: 100%;
+    display: block;
+    background-color: rgba(255, 255, 255, 0.824);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    backdrop-filter: blur(5px);
+    animation: fadeInDownBig;
+    animation-duration: 1s;
+}
+
+.container {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding: 20px;
+}
+
+.flexbox {
+    flex: 2;
+    margin-right: 20px;
+    animation: fadeInDownBig;
+    animation-duration: 1s;
+}
+
+.col-2 {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+}
+
+.col-2 a {
+    margin: 20px 0;
+    color: rgb(0, 0, 0);
+    text-decoration: none;
+    width: 200px;
+}
+
+.col-2 a:hover {
+    text-decoration: underline;
+}
+
+.border-box {
+    padding: 10px 10px;
+    border-color: rgb(11, 4, 4);
+    border-width: 4px;
+    border-style: solid;
+    border-radius: 10em;
+    align-items: center;
+}
+
+.sections {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.sections p {
+    width: 75%;
+}
+.sections{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.sections p{
+    width: 75%;
+  
 }
 
