@@ -1,7 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@300;400;500;600;700&display=swap');
 
 :root {
-    --bg-gradient: linear-gradient(90deg, rgb(233, 245, 253) 0%, rgb(253, 238, 247) 25%, rgba(255,255,255,1) 50%, rgb(251, 233, 246) 75%, rgb(227, 243, 252) 100%);
+    --bg-gradient: linear-gradient(90deg, rgb(194, 222, 248) 0%, rgb(253, 238, 247) 25%, rgba(255,255,255,1) 50%, rgb(251, 233, 246) 75%, rgb(194, 222, 248) 100%);
     --border-gradient: linear-gradient(to right, rgb(193, 193, 237), rgb(234, 193, 255)) 1;
     --color1: rgb(0, 0, 0);
     --color2: rgb(67, 77, 131);
@@ -42,7 +42,7 @@ body {
 .container {
     display: flex;
     flex-direction: row;
-    align-items: center;
+    align-items: top;
     padding: 20px;
 }
 
@@ -102,3 +102,18 @@ body {
   
 }
 
+
+.image{
+    display: flex;
+    justify-content: top;
+    align-items: top;
+    margin-top: 50px;
+}
+
+.images {
+    display: flex;
+    align-items: flex-start;
+  }
+  .images img {
+    margin-right: 10px; /* Add some spacing between the images */
+  }
