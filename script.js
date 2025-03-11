@@ -1,16 +1,17 @@
 // Get the modal
 var modal = document.getElementById("myModal");
 
-// Get the image and insert it inside the modal - use its "alt" text as a caption
-var img = document.getElementById("myImage");
-var modalImg = document.getElementById("img01");
-var modalImg = document.getElementById("img02");
-
+// Get all images with class "myImage" and insert them inside the modal - use their "alt" text as a caption
+var images = document.getElementsByClassName("myImage");
+var modalImg = document.getElementById("imgModal");
 var captionText = document.getElementById("caption");
-img.onclick = function(){
-  modal.style.display = "block";
-  modalImg.src = this.src;
-  captionText.innerHTML = this.alt;
+
+for (let i = 0; i < images.length; i++) {
+  images[i].onclick = function() {
+    modal.style.display = "block";
+    modalImg.src = this.src;
+    captionText.innerHTML = this.alt;
+  }
 }
 
 // Get the <span> element that closes the modal
